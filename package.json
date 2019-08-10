@@ -1,0 +1,35 @@
+{
+  "name": "repro-mongoose-issue-8053",
+  "version": "1.0.0",
+  "scripts": {
+    "jest": "jest"
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/plugin-proposal-object-rest-spread": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "@babel/register": "^7.5.5",
+    "mongoose": "^5.6.9"
+  },
+  "devDependencies": {
+    "jest": "^24.8.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "10"
+          }
+        }
+      ]
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-object-rest-spread"
+    ]
+  },
+  "jest": {
+    "testEnvironment": "node"
+  }
+}
